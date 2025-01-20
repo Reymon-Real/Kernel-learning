@@ -1,3 +1,7 @@
+# Important Note
+
+I haven't had time to modify the kernel, so for the moment it is the same as Anshul Rajan original.
+
 # Kernel
 
 Writing a kernel from scratch is to print something on screen. Using a VGA(Visual Graphics Array), a hardware system that controls the display. We will use GNU GRUB to load our kernel because it supports a multiboot of many operating systems.
