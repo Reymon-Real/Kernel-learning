@@ -1,15 +1,12 @@
-# Important Note
-
-I haven't had time to modify the kernel, so for the moment it is the same as Anshul Rajan original.
-
 # Kernel
 
 Writing a kernel from scratch is to print something on screen. Using a VGA(Visual Graphics Array), a hardware system that controls the display. We will use GNU GRUB to load our kernel because it supports a multiboot of many operating systems.
 
 ## Requirements
+
 * GNU/Linux
-* Assembler - I am using GNU Assembler(gas) to instruct the bootloader for loading the starting point of our kernel.
-* GCC - GNU Compiler Collection a cross compiler. A newer version of GCC. I am using 7.2.0 version of GCC.
+* Assembler - I am using Flat Assembler (FASM) to instruct the bootloader for loading the starting point of our kernel.
+* GCC - GNU Compiler Collection a cross compiler. A newer version of GCC. I am using 13.3.0 version of GCC.
 * Xorriso - A package that creates, loads, manipulates ISO 9660 filesystem images.(man xorriso)
 * grub-mkrescue - Make a GRUB rescue image, this package internally calls the xorriso functionality to build an iso image.
 * QEMU - Quick EMUlator to boot our kernel in virtual machine without rebooting the main system.
